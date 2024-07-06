@@ -7,6 +7,17 @@ require:
 
 AllCops:
   TargetRubyVersion: 3.3.1
+  Exclude:
+    - "bin/*"
+    - "config/**/*"
+    - "db/**/*"
+    - "lib/**/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "storage/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "Rakefile"
 
 # Gemfileに記載されているGemの重複を許可しない
 Bundler/DuplicatedGem:
