@@ -19,5 +19,7 @@
 require "rails_helper"
 
 RSpec.describe Administrator, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "ファクトリーが有効" do
+    expect(build(:administrator)).to be_valid
+  end
 end
