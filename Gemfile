@@ -28,4 +28,3 @@ group :development do
   gem "rubocop-rspec_rails"
   gem "web-console"
 end
-

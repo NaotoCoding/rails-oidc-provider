@@ -45,4 +45,3 @@ module RailsOidcProvider
     end
   end
 end
-
