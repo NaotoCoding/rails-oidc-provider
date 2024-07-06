@@ -17,6 +17,16 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 class User < ApplicationRecord
+  has_many :access_grants, # rubocop:disable Rails/InverseOf
+           class_name: "Doorkeeper::AccessGrant",
+           foreign_key: :resource_owner_id,
+           dependent: :destroy
+
+  has_many :access_tokens, # rubocop:disable Rails/InverseOf
+           class_name: "Doorkeeper::AccessToken",
+           foreign_key: :resource_owner_id,
+           dependent: :destroy
+
   validates :email, presence: true
 
   devise :database_authenticatable, :registerable,
