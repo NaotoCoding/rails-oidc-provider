@@ -2,6 +2,8 @@ require:
   - rubocop-rspec
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
 
 AllCops:
   TargetRubyVersion: 3.3.1
