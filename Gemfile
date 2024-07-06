@@ -4,6 +4,8 @@ ruby "3.3.1"
 
 gem "bootsnap", require: false
 gem "devise"
+gem "doorkeeper"
+gem "doorkeeper-openid_connect"
 gem "importmap-rails"
 gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
