@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :administrators
   use_doorkeeper_openid_connect
   use_doorkeeper
   devise_for :users
